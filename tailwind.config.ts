@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          muted: "hsl(var(--primary-muted))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -56,6 +57,31 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+          muted: "hsl(var(--sidebar-muted))",
+        },
+        // Hotel PMS status colors
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        // Room status colors
+        available: "hsl(var(--available))",
+        occupied: "hsl(var(--occupied))",
+        maintenance: "hsl(var(--maintenance))",
+        checkout: "hsl(var(--checkout))",
+        // Hotel specific colors
+        hotel: {
+          header: "hsl(var(--hotel-header))",
+          "header-foreground": "hsl(var(--hotel-header-foreground))",
+        },
+        reservation: {
+          confirmed: "hsl(var(--reservation-confirmed))",
+          pending: "hsl(var(--reservation-pending))",
+          cancelled: "hsl(var(--reservation-cancelled))",
         },
       },
       borderRadius: {
