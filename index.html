@@ -13,7 +13,9 @@
     
     <!-- Preload critical resources to reduce dependency chain -->
     <link rel="modulepreload" href="/src/main.tsx">
-    <link rel="preload" href="/src/index.css" as="style">
+    <!-- Load CSS non-blocking to prevent render blocking -->
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
 
     <meta property="og:title" content="hoteluxe-suite" />
     <meta property="og:description" content="Lovable Generated Project" />
